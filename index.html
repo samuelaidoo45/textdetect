@@ -144,7 +144,7 @@
       query({"inputs": text}).then((response) => {
         // Update the UI with the response from the API
         const data = JSON.parse(response);
-        console.log(response);
+        console.log(data);
         return;
         const detectedText = data[0];
 
