@@ -144,8 +144,7 @@
       query({"inputs": text}).then((response) => {
         // Update the UI with the response from the API
         const data = response;
-        console.log(data);
-        return;
+        
         const detectedText = data[0];
 
         let realScore = 0;
