@@ -121,7 +121,7 @@
         const response = await fetch(
           "https://api-inference.huggingface.co/models/roberta-base-openai-detector",
           {
-            headers: { Authorization: "" },
+            headers: { Authorization: `${TEXTDETECTTOKEN}` },
             method: "POST",
             body: JSON.stringify(data),
           }
@@ -152,7 +152,6 @@
       query({"inputs": text}).then((response) => {
         // Update the UI with the response from the API
         const data = response;
-        console.log(response);
       
         const detectedText = data[0];
 
