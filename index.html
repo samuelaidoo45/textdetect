@@ -84,7 +84,7 @@
             'Content-Type': 'application/json'
              },
             method: "POST",
-            body: data,
+            body: JSON.stringify(data),
           }
         );
         const result = await response.json();
